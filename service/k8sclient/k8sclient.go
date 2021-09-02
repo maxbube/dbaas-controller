@@ -70,7 +70,7 @@ const (
 )
 
 const (
-	pmmClientImage = "perconalab/pmm-client-fb:PR-1924-4756ca3"
+	pmmClientImage = "perconalab/pmm-client-fb:PR-1924-8915d83"
 
 	k8sAPIVersion     = "v1"
 	k8sMetaKindSecret = "Secret"
