@@ -330,7 +330,7 @@ type K8sClient struct {
 func init() {
 	if pmmversion.PMMVersion == "" {
 		// Prevent panicing on local development builds.
-		pmmClientImage = "perconalab/pmm-client:dev-latest"
+		pmmClientImage = "perconalab/pmm-client-fb:PR-1924-213d444"
 		return
 	}
 
@@ -341,10 +341,10 @@ func init() {
 
 	if v.Core().String() == v.String() {
 		// Production version contains only major.minor.patch ...
-		pmmClientImage = "percona/pmm-client:perconalab/pmm-client-fb:PR-1924-213d444"
+		pmmClientImage = "perconalab/pmm-client-fb:PR-1924-6e33580"
 	} else {
 		// ... development version contains also commit.
-		pmmClientImage = "perconalab/pmm-client:dev-latest"
+		pmmClientImage = "perconalab/pmm-client-fb:PR-1924-6e33580"
 	}
 }
 
